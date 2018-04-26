@@ -7,7 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
 
         <TextView
             android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:text="@string/qName"
             android:textSize="@dimen/font_size_medium" />
         <EditText
-            android:id="@+id/name"
+            android:id="@+id/editText_name"
             android:layout_marginStart="@dimen/oneFour"
             android:layout_marginEnd="@dimen/ten"
             android:layout_marginTop="@dimen/oneSix"
@@ -36,10 +37,12 @@
             android:textSize="@dimen/font_size_medium"/>
         <RadioGroup
             android:id="@+id/rg_Q1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/oneSix"
-            android:layout_marginStart="@dimen/oneFour">
+            android:background="@android:color/holo_orange_light"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginEnd="@dimen/oneFour">
             <RadioButton
                 android:id="@+id/rb_Q1_op1"
                 android:layout_width="wrap_content"
@@ -70,6 +73,18 @@
             </RadioButton>
 
         </RadioGroup>
+        <TextView
+            android:id="@+id/textView_name"
+            android:text="@string/Result"
+            android:layout_marginTop="@dimen/oneFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/button_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="@string/Result" />
 
     </LinearLayout>
 

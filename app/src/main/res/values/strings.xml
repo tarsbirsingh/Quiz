@@ -60,4 +60,7 @@
     <string name="getResult">Submit</string>
     <string name="Answer">Answer</string>
     <string name="reset">Reset</string>
+
+
+    <string name="Result">Result</string>
 </resources>
