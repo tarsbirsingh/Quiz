@@ -1,14 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Quiz!" />
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="@dimen/oneSix"
+            android:fontFamily="monospace"
+            android:text="@string/qName"
+            android:textSize="@dimen/font_size_medium" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Name"
+            android:inputType="textCapWords"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_marginEnd="@dimen/oneSix"
+            android:layout_marginStart="@dimen/oneFour"
+            android:text="@string/Q1"
+            android:textSize="@dimen/font_size_medium"/>
+        <RadioGroup
+            android:id="@+id/rg_Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_marginStart="@dimen/oneFour">
+            <RadioButton
+                android:id="@+id/rb_Q1_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q1_Op1"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/rb_Q1_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q1_Op2"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/rb_Q1_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q1_Op3"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/rb_Q1_op4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q1_Op4"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>
