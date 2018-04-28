@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/oneSix"
-            android:background="@android:color/holo_orange_light"
+            android:background="@android:color/holo_orange_dark"
             android:layout_marginStart="@dimen/oneFour"
             android:layout_marginEnd="@dimen/oneFour">
             <RadioButton
@@ -127,6 +127,7 @@
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
         </RadioGroup>
+        <!--Third Question-->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -278,6 +279,216 @@
             </RadioButton>
 
         </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_marginEnd="@dimen/oneSix"
+            android:layout_marginStart="@dimen/oneFour"
+            android:text="@string/Q6"
+            android:textSize="@dimen/font_size_medium"/>
+        <CheckBox
+            android:id="@+id/radioButton_Q6_op1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Q6_Op1"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginTop="@dimen/eight"
+            android:textSize="@dimen/font_size_medium">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/radioButton_Q6_op2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Q6_Op2"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginTop="@dimen/eight"
+            android:textSize="@dimen/font_size_medium">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/radioButton_Q6_op3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:text="@string/Q6_Op3"
+            android:layout_marginStart="@dimen/oneFour"
+            android:textSize="@dimen/font_size_medium">
+        </CheckBox>
+        <CheckBox
+            android:id="@+id/radioButton_Q6_op4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Q6_Op4"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginTop="@dimen/eight"
+            android:textSize="@dimen/font_size_medium">
+        </CheckBox>
+        <!--Seventh Question-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_marginEnd="@dimen/oneSix"
+            android:layout_marginStart="@dimen/oneFour"
+            android:text="@string/Q7"
+            android:textSize="@dimen/font_size_medium"/>
+        <RadioGroup
+            android:id="@+id/radioGroup_Q7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:background="@android:color/holo_orange_light"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginEnd="@dimen/oneFour">
+            <RadioButton
+                android:id="@+id/radioButton_Q7_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q7_Op1"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q7_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q7_Op2"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q7_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:text="@string/Q7_Op3"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q7_op4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q7_Op4"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+        </RadioGroup>
+        <!--Eight Question-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_marginEnd="@dimen/oneSix"
+            android:layout_marginStart="@dimen/oneFour"
+            android:text="@string/Q8"
+            android:textSize="@dimen/font_size_medium"/>
+        <RadioGroup
+            android:id="@+id/radioGroup_Q8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:background="@android:color/holo_orange_light"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginEnd="@dimen/oneFour">
+            <RadioButton
+                android:id="@+id/radioButton_Q8_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q8_Op1"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q8_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q8_Op2"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q8_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:text="@string/Q8_Op3"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q8_op4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q8_Op4"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+        </RadioGroup>
+        <!--NIne Question-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_marginEnd="@dimen/oneSix"
+            android:layout_marginStart="@dimen/oneFour"
+            android:text="@string/Q9"
+            android:textSize="@dimen/font_size_medium"/>
+        <RadioGroup
+            android:id="@+id/radioGroup_Q9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:background="@android:color/holo_orange_light"
+            android:layout_marginStart="@dimen/oneFour"
+            android:layout_marginEnd="@dimen/oneFour">
+            <RadioButton
+                android:id="@+id/radioButton_Q9_op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q9_Op1"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q9_op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q9_Op2"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q9_op3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
+                android:text="@string/Q9_Op3"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioButton_Q9_op4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Q9_Op4"
+                android:layout_marginTop="@dimen/eight"
+                android:textSize="@dimen/font_size_medium">
+            </RadioButton>
+        </RadioGroup>
+        <!--10 Question-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/oneSix"
+            android:layout_marginEnd="@dimen/oneSix"
+            android:layout_marginStart="@dimen/oneFour"
+            android:text="@string/Q10"
+            android:textSize="@dimen/font_size_medium"/>
+        <EditText
+            android:id="@+id/Q10_ans_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Answer"
+            android:layout_marginTop="@dimen/eight"
+            android:inputType="textCapWords"/>
         <!--Result show with @id/textView_name-->
         <TextView
             android:id="@+id/textView_name"

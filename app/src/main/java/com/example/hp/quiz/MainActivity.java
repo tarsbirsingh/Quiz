@@ -11,7 +11,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup1;
     RadioGroup radioGroup2;
-   
     //RadioButton Define here with numeric series
     RadioButton radioButton1;
     RadioButton radioButton2;
@@ -20,13 +19,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
-
+       //with id
        final EditText editName =  findViewById(R.id.editText_name);
        final TextView displayText = findViewById(R.id.textView_name);
        radioGroup1 = findViewById(R.id.radioGroup_Q1);
        radioGroup2 = findViewById(R.id.radioGroup_Q2);
        Button showButton = findViewById(R.id.button_show);
-
        showButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
