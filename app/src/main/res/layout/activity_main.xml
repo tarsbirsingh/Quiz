@@ -36,7 +36,7 @@
             android:text="@string/Q1"
             android:textSize="@dimen/font_size_medium"/>
         <RadioGroup
-            android:id="@+id/rg_Q1"
+            android:id="@+id/radioGroup_Q1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/oneSix"
@@ -44,31 +44,35 @@
             android:layout_marginStart="@dimen/oneFour"
             android:layout_marginEnd="@dimen/oneFour">
             <RadioButton
-                android:id="@+id/rb_Q1_op1"
+                android:id="@+id/radioButton_Q1_op1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Q1_Op1"
+                android:layout_marginTop="@dimen/eight"
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
             <RadioButton
-                android:id="@+id/rb_Q1_op2"
+                android:id="@+id/radioButton_Q1_op2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Q1_Op2"
+                android:layout_marginTop="@dimen/eight"
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
             <RadioButton
-                android:id="@+id/rb_Q1_op3"
+                android:id="@+id/radioButton_Q1_op3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/eight"
                 android:text="@string/Q1_Op3"
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
             <RadioButton
-                android:id="@+id/rb_Q1_op4"
+                android:id="@+id/radioButton_Q1_op4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Q1_Op4"
+                android:layout_marginTop="@dimen/eight"
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
 
