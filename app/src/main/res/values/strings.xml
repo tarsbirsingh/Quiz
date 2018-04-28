@@ -2,6 +2,7 @@
     <string name="app_name">Quiz</string>
     <string name="qName">Educational</string>
     <string name="Name"> Enter Your Name</string>
+    <!--q1-->
     <string name="Q1">Q1. What method you should override to use Android menu system ?</string>
     <string name="Q1_Op1">onCreateOptionsMenu()</string>
     <string name="Q1_Op2">onCreateMenu()</string>
