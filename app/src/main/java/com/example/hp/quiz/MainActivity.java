@@ -19,12 +19,9 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup5;
     RadioGroup radioGroup7;
     RadioGroup radioGroup8;
-    // Checkbox Group
     CheckBox checkBox1;
-    //CheckBox checkBox2;
     CheckBox checkBox3;
     CheckBox checkBox4;
-    //Edit Text
     EditText editText1;
     EditText editText2;
 
@@ -39,29 +36,28 @@ public class MainActivity extends AppCompatActivity {
     RadioButton radioButton5;
     RadioButton radioButton7;
     RadioButton radioButton8;
-
+ private void getView() {
+     radioGroup1 = findViewById(R.id.radioGroup_Q1);
+     radioGroup2 = findViewById(R.id.radioGroup_Q2);
+     radioGroup3 = findViewById(R.id.radioGroup_Q3);
+     radioGroup4 = findViewById(R.id.radioGroup_Q4);
+     radioGroup5 = findViewById(R.id.radioGroup_Q5);
+     radioGroup7 = findViewById(R.id.radioGroup_Q7);
+     radioGroup8 = findViewById(R.id.radioGroup_Q8);
+     //Checkbox here
+     checkBox1=findViewById(R.id.checkbox_Q6_op1);
+     checkBox3=findViewById(R.id.checkbox_Q6_op3);
+     checkBox4=findViewById(R.id.checkbox_Q6_op4);
+     editText1=findViewById(R.id.Q9_ans_view);
+     editText2=findViewById(R.id.Q10_ans_view);
+ }
    @Override
     protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
-       //with id
+       getView();
        final EditText editName =  findViewById(R.id.editText_name);
        final TextView displayText = findViewById(R.id.textView_name);
-       //Radio Group
-       radioGroup1 = findViewById(R.id.radioGroup_Q1);
-       radioGroup2 = findViewById(R.id.radioGroup_Q2);
-       radioGroup3 = findViewById(R.id.radioGroup_Q3);
-       radioGroup4 = findViewById(R.id.radioGroup_Q4);
-       radioGroup5 = findViewById(R.id.radioGroup_Q5);
-       radioGroup7 = findViewById(R.id.radioGroup_Q7);
-       radioGroup8 = findViewById(R.id.radioGroup_Q8);
-       //Checkbox here
-       checkBox1=findViewById(R.id.checkbox_Q6_op1);
-       checkBox3=findViewById(R.id.checkbox_Q6_op3);
-       checkBox4=findViewById(R.id.checkbox_Q6_op4);
-       editText1=findViewById(R.id.Q9_ans_view);
-       editText2=findViewById(R.id.Q10_ans_view);
-
        Button showButton = findViewById(R.id.button_show);
        showButton.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -104,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                else if (selectedId8==R.id.radioButton_Q8_op4) {
                    score =score+1;
                }
+
                String hell ="Thanks "+name+"your score is"+score;
                //display value on screen
                displayText.setText(hell);
