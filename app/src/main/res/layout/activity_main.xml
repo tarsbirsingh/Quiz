@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/colorAccent">
+        android:background="@color/ol">
 
         <TextView
             android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_margin="@dimen/oneSix"
             android:fontFamily="monospace"
             android:text="@string/qName"
-            android:textSize="@dimen/font_size_medium" />
+            android:textSize="@dimen/font_size_large" />
         <EditText
             android:id="@+id/editText_name"
             android:layout_marginStart="@dimen/oneFour"
