@@ -117,7 +117,14 @@ public class MainActivity extends AppCompatActivity {
                    score+=1;
                }
 
-
+               String questionNine =editText1.getText().toString();
+               if(questionNine.equals("James Gosling")){
+                   score+=1;
+               }
+               String questionTen =editText1.getText().toString();
+               if(questionTen.equals("False")){
+                   score+=1;
+               }
 
                    String finalScore = "Hi " +name+ " you have Scored " + score+"  out of 10";
                    Toast.makeText(getApplicationContext(),finalScore,Toast.LENGTH_LONG).show();
