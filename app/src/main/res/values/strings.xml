@@ -2,6 +2,9 @@
     <string name="app_name">Quiz</string>
     <string name="qName">Android Quiz</string>
     <string name="Name"> Enter Your Name</string>
+    <string name="hi"> Hi \u0020 </string>
+    <string name="ten"> \u0020 out of 10  </string>
+    <string name="youHaveScored"> \u0020 you have Scored \u0020 </string>
     <!--q1-->
     <string name="Q1">Q1. What method you should override to use Android menu system ?</string>
     <string name="Q1_Op1">onCreateOptionsMenu()</string>

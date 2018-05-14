@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                    score+=1;
                }
 
-                   String finalScore = "Hi " +name+ " you have Scored " + score+"  out of 10";
+                   String finalScore = getString(R.string.hi) +name+ getString(R.string.youHaveScored)+score+ getString(R.string.ten);
                    Toast.makeText(getApplicationContext(),finalScore,Toast.LENGTH_LONG).show();
 
 
