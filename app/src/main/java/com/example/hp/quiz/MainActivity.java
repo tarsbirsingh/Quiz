@@ -1,4 +1,5 @@
 package com.example.hp.quiz;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,20 +11,23 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int score=0;
+    private int score;
     /**Radio Group*/
-   RadioGroup radioGroup1;
-    RadioGroup radioGroup2;
-    RadioGroup radioGroup3;
-    RadioGroup radioGroup4;
-    RadioGroup radioGroup5;
-    RadioGroup radioGroup7;
-    RadioGroup radioGroup8;
-    CheckBox checkBox1;
-    CheckBox checkBox3;
-    CheckBox checkBox4;
-    EditText editText1;
+  private RadioGroup radioGroup1;
+  private RadioGroup radioGroup2;
+  private RadioGroup radioGroup3;
+  private RadioGroup radioGroup4;
+  private RadioGroup radioGroup5;
+  private RadioGroup radioGroup7;
+  private RadioGroup radioGroup8;
+  private CheckBox checkBox1;
+  private CheckBox checkBox3;
+  private CheckBox checkBox4;
+  private EditText editName;
+  EditText editText1;
     EditText editText2;
+  private  Button showButton;
+  private TextView displayText;
 
     /**
      *  RadioButton Define here with numeric series
@@ -50,18 +54,20 @@ public class MainActivity extends AppCompatActivity {
      checkBox4=findViewById(R.id.checkbox_Q6_op4);
      editText1=findViewById(R.id.Q9_ans_view);
      editText2=findViewById(R.id.Q10_ans_view);
+     editName =  findViewById(R.id.editText_name);
+     showButton = findViewById(R.id.button_show);
+     displayText = findViewById(R.id.textView_name);
  }
+
    @Override
     protected void onCreate(Bundle savedInstanceState) {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
        getView();
-       final EditText editName =  findViewById(R.id.editText_name);
-       final TextView displayText = findViewById(R.id.textView_name);
-       Button showButton = findViewById(R.id.button_show);
        showButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+               score=0;
                String name = editName.getText().toString();
                //radio button for FIRST QUESTION
                int selectedId1=radioGroup1.getCheckedRadioButtonId();
@@ -78,27 +84,51 @@ public class MainActivity extends AppCompatActivity {
                radioButton5=findViewById(selectedId5);
                radioButton7=findViewById(selectedId7);
                radioButton8=findViewById(selectedId8);
+               checkBox1.isChecked();
+               checkBox3.isChecked();
+               checkBox4.isChecked();
                //if statement for radio button
                if (selectedId1==R.id.radioButton_Q1_op1) {
-                   score =score+1;
+                   score+=1;
                }
-               else if (selectedId2==R.id.radioButton_Q2_op4) {
-                   score =score+1;
+               else{
+                   radioButton1.setTextColor(Color.RED);
                }
-               else if (selectedId3==R.id.radioButton_Q3_op4){
-                   score =score+1;
+               if (selectedId2==R.id.radioButton_Q2_op4) {
+                   score+=1;
                }
-               else if (selectedId4==R.id.radioButton_Q4_op2) {
-                   score =score+1;
+               else{
+                   radioButton2.setTextColor(Color.RED);
                }
-               else if (selectedId5==R.id.radioButton_Q5_op1) {
-                   score =score+1;
+               if (selectedId3==R.id.radioButton_Q3_op4){
+                   score+=1;
                }
-               else if (selectedId7==R.id.radioButton_Q7_op4){
-                   score =score+1;
+               else{
+                   radioButton3.setTextColor(Color.RED);
                }
-               else if (selectedId8==R.id.radioButton_Q8_op4) {
-                   score =score+1;
+               if (selectedId4==R.id.radioButton_Q4_op2) {
+                   score+=1;
+               }
+               else{
+                   radioButton4.setTextColor(Color.RED);
+               }
+               if (selectedId5==R.id.radioButton_Q5_op1) {
+                   score+=1;
+               }
+               else{
+                   radioButton5.setTextColor(Color.RED);
+               }
+               if (selectedId7==R.id.radioButton_Q7_op4){
+                   score+=1;
+               }
+               else{
+                   radioButton7.setTextColor(Color.RED);
+               }
+               if (selectedId8==R.id.radioButton_Q8_op4) {
+                   score+=1;
+               }
+               else{
+                   radioButton8.setTextColor(Color.RED);
                }
 
                String hell ="Thanks "+name+"your score is"+score;
