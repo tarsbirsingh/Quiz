@@ -288,7 +288,7 @@
             android:text="@string/Q6"
             android:textSize="@dimen/font_size_medium"/>
         <CheckBox
-            android:id="@+id/radioButton_Q6_op1"
+            android:id="@+id/checkbox_Q6_op1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Q6_Op1"
@@ -297,7 +297,7 @@
             android:textSize="@dimen/font_size_medium">
         </CheckBox>
         <CheckBox
-            android:id="@+id/radioButton_Q6_op2"
+            android:id="@+id/checkbox_Q6_op2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Q6_Op2"
@@ -306,7 +306,7 @@
             android:textSize="@dimen/font_size_medium">
         </CheckBox>
         <CheckBox
-            android:id="@+id/radioButton_Q6_op3"
+            android:id="@+id/checkbox_Q6_op3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/eight"
@@ -315,7 +315,7 @@
             android:textSize="@dimen/font_size_medium">
         </CheckBox>
         <CheckBox
-            android:id="@+id/radioButton_Q6_op4"
+            android:id="@+id/checkbox_Q6_op4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Q6_Op4"

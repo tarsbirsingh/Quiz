@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int score=0;
     /**Radio Group*/
-    RadioGroup radioGroup1;
+   RadioGroup radioGroup1;
     RadioGroup radioGroup2;
     RadioGroup radioGroup3;
     RadioGroup radioGroup4;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup8;
     // Checkbox Group
     CheckBox checkBox1;
-    CheckBox checkBox2;
+    //CheckBox checkBox2;
     CheckBox checkBox3;
     CheckBox checkBox4;
     //Edit Text
@@ -55,6 +55,12 @@ public class MainActivity extends AppCompatActivity {
        radioGroup5 = findViewById(R.id.radioGroup_Q5);
        radioGroup7 = findViewById(R.id.radioGroup_Q7);
        radioGroup8 = findViewById(R.id.radioGroup_Q8);
+       //Checkbox here
+       checkBox1=findViewById(R.id.checkbox_Q6_op1);
+       checkBox3=findViewById(R.id.checkbox_Q6_op3);
+       checkBox4=findViewById(R.id.checkbox_Q6_op4);
+       editText1=findViewById(R.id.Q9_ans_view);
+       editText2=findViewById(R.id.Q10_ans_view);
 
        Button showButton = findViewById(R.id.button_show);
        showButton.setOnClickListener(new View.OnClickListener() {
