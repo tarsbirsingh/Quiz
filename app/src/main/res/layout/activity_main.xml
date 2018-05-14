@@ -25,8 +25,14 @@
             android:layout_marginTop="@dimen/oneSix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
             android:hint="@string/Name"
             android:inputType="textCapWords"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,6 +83,11 @@
             </RadioButton>
 
         </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--Second Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -127,6 +138,11 @@
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
         </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--Third Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -178,6 +194,11 @@
             </RadioButton>
 
         </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--Fourth Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -228,6 +249,11 @@
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
         </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--Fifth Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -277,8 +303,11 @@
                 android:layout_marginTop="@dimen/eight"
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
-
         </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -332,6 +361,11 @@
             android:textSize="@dimen/font_size_medium">
         </CheckBox>
         </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--Seventh Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -382,6 +416,11 @@
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
         </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--Eight Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -432,6 +471,11 @@
                 android:textSize="@dimen/font_size_medium">
             </RadioButton>
         </RadioGroup>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--NIne Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -448,8 +492,14 @@
             android:hint="@string/Answer"
             android:layout_marginStart="@dimen/oneFour"
             android:layout_marginEnd="@dimen/oneFour"
+            android:background="@android:color/holo_orange_light"
             android:layout_marginTop="@dimen/eight"
             android:inputType="textCapWords"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/oneFour"
+            android:background="#c0c0c0"/>
         <!--10 Question-->
         <TextView
             android:layout_width="wrap_content"
@@ -467,6 +517,7 @@
             android:layout_marginStart="@dimen/oneFour"
             android:layout_marginEnd="@dimen/oneFour"
             android:layout_marginTop="@dimen/eight"
+            android:background="@android:color/holo_orange_light"
             android:inputType="textCapWords"/>
         <!--Result show with @id/textView_name-->
 
