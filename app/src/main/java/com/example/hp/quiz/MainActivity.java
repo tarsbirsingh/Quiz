@@ -1,5 +1,4 @@
 package com.example.hp.quiz;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private int score;
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
   EditText editText1;
     EditText editText2;
   private  Button showButton;
-  private TextView displayText;
+  //private TextView displayText;
 
     /**
      *  RadioButton Define here with numeric series
@@ -56,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
      editText2=findViewById(R.id.Q10_ans_view);
      editName =  findViewById(R.id.editText_name);
      showButton = findViewById(R.id.button_show);
-     displayText = findViewById(R.id.textView_name);
+     //displayText = findViewById(R.id.textView_name);
  }
 
    @Override
@@ -91,50 +90,45 @@ public class MainActivity extends AppCompatActivity {
                if (selectedId1==R.id.radioButton_Q1_op1) {
                    score+=1;
                }
-               else{
-                   radioButton1.setTextColor(Color.RED);
-               }
+
                if (selectedId2==R.id.radioButton_Q2_op4) {
                    score+=1;
                }
-               else{
-                   radioButton2.setTextColor(Color.RED);
-               }
+
                if (selectedId3==R.id.radioButton_Q3_op4){
                    score+=1;
                }
-               else{
-                   radioButton3.setTextColor(Color.RED);
-               }
+
                if (selectedId4==R.id.radioButton_Q4_op2) {
                    score+=1;
                }
-               else{
-                   radioButton4.setTextColor(Color.RED);
-               }
+
                if (selectedId5==R.id.radioButton_Q5_op1) {
                    score+=1;
                }
-               else{
-                   radioButton5.setTextColor(Color.RED);
-               }
-               if (selectedId7==R.id.radioButton_Q7_op4){
-                   score+=1;
-               }
-               else{
-                   radioButton7.setTextColor(Color.RED);
+
+               if (selectedId7==R.id.radioButton_Q7_op4) {
+                   score += 1;
                }
                if (selectedId8==R.id.radioButton_Q8_op4) {
                    score+=1;
                }
-               else{
-                   radioButton8.setTextColor(Color.RED);
+               if (checkBox4.isChecked() && checkBox3.isChecked() && checkBox1.isChecked()) {
+                   score+=1;
                }
 
-               String hell ="Thanks "+name+"your score is"+score;
+
+
+                   String finalScore = "Hi " +name+ " you have Scored " + score+"  out of 10";
+                   Toast.makeText(getApplicationContext(),finalScore,Toast.LENGTH_LONG).show();
+
+
+               //String hell ="Thanks "+name+"your score is"+score;
+
                //display value on screen
-               displayText.setText(hell);
+               //displayText.setText(hell);
            }
        });
+
    }
 }
